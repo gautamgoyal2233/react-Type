@@ -12,7 +12,7 @@ const layout = {
 };
 
 const UserData: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState<boolean>(false);
 
   const getData = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");

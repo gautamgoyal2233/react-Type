@@ -16,6 +16,8 @@ const UserDetails: React.FC = () => {
 
   const { data, isLoading, isError } = useQuery("userdata", getData);
 
+
+
   if (isLoading) return <Spin />;
 
   if (isError)
