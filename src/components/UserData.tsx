@@ -61,7 +61,19 @@ const UserData: React.FC = () => {
         extra={<Button type="primary">Back Home</Button>}
       />
     );
-  if (isLoading) return <Spin />;
+  if (isLoading)
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <Spin />
+      </div>
+    );
 
   return (
     <>
